@@ -1,0 +1,42 @@
+.num {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    display: block;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+ }
+
+ .container {
+    display: flex;
+    border: 3px solid black;
+    height: 400px;
+
+    flex-wrap: wrap; /*2.1*/
+ }
+
+ .el{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*2.2*/
+ }
+
+ .el:nth-child(5n + 1){
+    background-color: green;
+ }
+ .el:nth-child(5n + 2){
+    background-color: red;
+ }
+ .el:nth-child(5n + 3){
+    background-color: blue;
+ }
+ .el:nth-child(5n + 4){
+    background-color: yellow;
+ }
+ .el:nth-child(5n + 5){
+    background-color: black;
+ }
+
+
